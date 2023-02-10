@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,200;1,300&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		body{
+			background: hsl(0, 100%, 98%) url("images/bg-pattern-desktop.svg");
+			max-width: 1440px;
+		}
+		.main{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.logo{
+			position: absolute;
+			margin-top: 5%;
+            margin-left: 311px;
+		}
+		.bg_logo{
+			margin: 0 auto;
+		}
+		.desktop-img{
+			height: 680px;
+			margin-top: 20px;
+		}
+		
+		p{
+		    padding-left: 34%;
+   		    padding-right: 24%;
+		}
+		.row2 .p{
+			padding-left: 34%;
+			line-height: 2.4;
+			color: hsl(0, 36%, 70%);
+			font-size: 45px;
+			margin-top: -56px;
+			letter-spacing: 15px;
+		}
+		.row2 .p1{
+			padding-left: 34%;
+			line-height: 2.4;
+			color: black;
+			font-weight: bold;
+			font-size: 45px;
+			margin-top: -56px;
+			letter-spacing: 15px;
+		}
+		.row2 .p4{
+			padding-left: 34%;
+			line-height: 2.4;
+			color: black;
+			font-weight: bold;
+			font-size: 45px;
+			margin-top: -56px;
+			letter-spacing: 15px;
+		}
+		.row2 .p3{
+			color: hsl(0, 36%, 70%);
+			font-weight: bold;
+			line-height: 1.6;
+		}
+		form input{
+			width: 50%;
+            border-radius: 18px;
+            height: 39px;
+            border: 1px solid hsl(0, 36%, 70%);
+			outline: none;
+		}
+		input::placeholder{
+			color:hsl(0, 36%, 70%);
+			padding: 20px;
+			font-weight: bold;
+			font-size: 12px;
+		}
+		form{
+			font-family: serif;
+			margin-left: 34%;
+            padding-top: 28px;
+		}
+		
+		form .button{
+			border: none;
+			border-radius: 18px;
+			width: 5%;
+			height: 39px;
+			position: absolute;
+			margin-left: 245px;
+			margin-top: -39px;
+			background: linear-gradient(135deg, hsl(0, 80%, 86%) 43%, hsl(0, 74%, 74%) 100%);
+		}
+		.mail-name{
+	    	color: red;
+    		float: left;
+    		margin-left: -185px;
+    		font-size: 15px;
+    		font-weight: bold;
+     		margin-top: 10px;
+	    }
+	    .error_blog{
+	    	position: relative;
+
+	    }
+	    .icon-error{
+	    	top: 7px;
+    		left: 35%;
+	    	right: 43px;
+	    	position: absolute;
+	    	display: none;
+	    }
+		@media only screen and (max-width:1024px){
+			.logo{
+				margin-left: 173px;
+			}
+			form input{
+				width: 67%;
+			}
+			form .button{
+				margin-left: 193px;
+			}
+			.icon-error{
+				left: 49%;
+			}
+			.mail-name{
+				margin-left: -100px;
+			}
+		}
+		
+		@media only screen and (max-width: 768px){
+			body{
+				background:hsl(0, 100%, 98%);
+				/* opacity: 0.8; */
+			}
+			.logo{
+				margin-left: 20px;
+			}
+			.main {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+			.desktop-img{
+				display: none;
+			}
+			.row2{
+				margin-top: 100px;
+			}
+			.row2 .p{
+				font-size: 60px;
+				letter-spacing: 15px;
+			}
+			.row2 .p1 {
+				padding-left: 27%;
+				font-size: 50px;
+				margin-top: -67px;
+				letter-spacing: 15px;
+			}
+			.row2 .p4 {
+				padding-left: 39%;
+				font-size: 50px;
+				letter-spacing: 16px;
+				margin-top: -67px;
+			}
+			.row2 .p3 {
+				text-align: center;
+				width: 142%;
+				line-height: 25px;
+				padding: 73px;
+    			margin-top: -23%
+			}
+			.mobile-img{
+				margin-top: 25%;
+    			width: 146%;
+			}
+			form{
+				padding-bottom: 50px;
+			}
+			form input {
+				width: 152%;
+				border-radius: 24px;
+				padding: 25px;
+				margin-left: -58px;
+				margin-top: -18px;
+			}
+			form .button {
+				border-radius: 45px;
+				width: 20%;
+				height: 52px;
+				margin-top: -52px;
+				margin-left: 69%;
+			}
+			.icon-error {
+				top: -3px;
+				left: 88%;
+			}
+			.mail-name{
+				padding-left: 0;
+				margin-left: 0px;
+			}
+		}
+	
+		 @media only screen and (max-width: 2560px) and (min-width: 1024px){
+			.mobile-img{
+				display: none;
+			}
+
+		} 
+		@media only screen and (max-width: 768px) and (min-width: 320px){
+			.desktop-img{
+				display: none;
+			}
+		}
+		
